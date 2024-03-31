@@ -25,6 +25,7 @@ const Card = ({ event, hasOrderLink, hidePrice }: CardProps) => {
         style={{ backgroundImage: `url(${event.imageUrl})` }}
         className="flex-center flex-grow bg-gray-50 bg-cover bg-center text-grey-500"
       />
+      
       {/* IS EVENT CREATOR ... */}
 
       {isEventCreator && !hidePrice && (
@@ -71,7 +72,7 @@ const Card = ({ event, hasOrderLink, hidePrice }: CardProps) => {
 
           {hasOrderLink && (
             <Link href={`/orders?eventId=${event._id}`} className="flex gap-2">
-              <p className="text-primary-500">Order Details</p>
+              <p className="text-primary-500">View Order Details</p>
               <Image
                 src="/assets/icons/arrow.svg"
                 alt="search"
