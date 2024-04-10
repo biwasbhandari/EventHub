@@ -69,5 +69,5 @@ const CategoryFilter = () => {
     </Select>
   );
 };
-
+// export now
 export default CategoryFilter;
