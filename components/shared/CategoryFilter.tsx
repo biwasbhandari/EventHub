@@ -29,7 +29,7 @@ const CategoryFilter = () => {
 
   const onSelectCategory = (category: string) => {
     let newUrl = "";
-
+    // category filter
     if (category && category !== "All") {
       newUrl = formUrlQuery({
         params: searchParams.toString(),
@@ -69,5 +69,5 @@ const CategoryFilter = () => {
     </Select>
   );
 };
-// export now
+// exported
 export default CategoryFilter;
